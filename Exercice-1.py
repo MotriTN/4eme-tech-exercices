@@ -1,3 +1,4 @@
+#Exercice 4 serie 1
 N=int(input(("Donner N : ")))
 while not (5<=N<=150):
     N=int(input(("Donner N : ")))
