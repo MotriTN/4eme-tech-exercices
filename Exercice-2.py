@@ -18,3 +18,15 @@ else:
 
 print("mots: ", p)
 print(s)
+#correction
+"""ch = input("Donner ch : ")
+while not ((ch[-1] == ".") and (ch != ".")):
+    ch = input("Donner ch : ")
+i = 0
+while i < len(ch) - 1:
+    if ch[i] == ch[i + 1] == " ":
+        ch = ch[:i] + ch[i + 1:]
+    else:
+        i += 1
+print(ch)
+"""
