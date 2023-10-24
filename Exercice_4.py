@@ -51,13 +51,13 @@ def Voy(nom):
 
 def mot_de_passe(nom, indice):
     global mot_de_passe
-    mot_de_passe = nom[: 2]
-    mot_de_passe += str(indice)
+    mot_de_pass = nom[: 2]
+    mot_de_pass += str(indice)
     if Voy(nom) > 90:
-        mot_de_passe += "a"
+        mot_de_pass += "a"
     else:
-        mot_de_passe += Voy(nom)
-    return mot_de_passe
+        mot_de_pass += str(Voy(nom))
+    return mot_de_pass
 
 
 Tid = array([str] * N)
