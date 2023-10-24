@@ -24,7 +24,7 @@ def Verify_Input(nom):
     return Is_Good
 
 
-T = array([N * str])
+T = array([str] * N)
 
 
 def remp1(T, N):
@@ -49,9 +49,19 @@ def Voy(nom):
     return nb
 
 
-def mot_de_passe(nom):
+def mot_de_passe(nom, indice):
     global mot_de_passe
-    mot_de_passe = nom[:2]
+    mot_de_passe = nom[: 2]
+    mot_de_passe += str(indice)
+    if Voy(nom) > 90:
+        mot_de_passe += "a"
+    else:
+        mot_de_passe += Voy(nom)
+    return mot_de_passe
 
 
-Tid = array([N * str])
+Tid = array([str] * N)
+for i in range(N):
+    Tid[i] = mot_de_passe(T[i], i)
+print(T)
+print(Tid)
